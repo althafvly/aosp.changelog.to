@@ -1,0 +1,594 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./assets/style.css" >
+<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="icon" href="./assets/favicon.svg" type="image/svg">
+<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+<title>android-security-16.0.0_r2 to android-security-16.0.0_r3 AOSP changelog</title>
+
+<script>
+function show(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'none';
+		document.getElementById(sectionId+'-hide').style.display = 'inline';
+		document.getElementById(sectionId).style.display = 'block';
+	}
+}
+
+function hide(sectionId) {
+	if (document.getElementById(sectionId)) {
+		document.getElementById(sectionId+'-show').style.display = 'inline';
+		document.getElementById(sectionId+'-hide').style.display = 'none';
+		document.getElementById(sectionId).style.display = 'none';
+	}
+}
+</script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">AOSP Changelogs</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container card">
+<div class="row">
+    <div class="col-md-12">
+        <h1>android-security-16.0.0_r2 to android-security-16.0.0_r3 AOSP changelog</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+<p>This only includes the Android Open Source Project changes and does not include any changes
+in any proprietary components included by Google or any hardware manufacturer. The raw log was 
+generated using a modified version of <a href="https://groups.google.com/d/msg/android-building/0DtsHawjs4k/And8o3Dni_UJ">this script</a> written by JBQ and improved by Al Sutton.</p>
+
+<p><strong>Please do not copy this without attribution to this site and JBQ for the original script.</strong></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="changes">
+<p><h2><a href="#" id="platform_build-show" class="showLink" onclick="show('platform_build');return false;">+</a><a href="#" id="platform_build-hide" class="hideLink" onclick="hide('platform_build');return false;">-</a>&nbsp;<a name="platform_build" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build">platform/build</a></h2>
+<div id="platform_build"><a href="https://android.googlesource.com/platform/build/+/25c5cd26aa">25c5cd26aa</a> :  Version bump to BP2A.250805.014 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/19cfb62183">19cfb62183</a> :  Version bump to BP2A.250805.013 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/286b49cb8d">286b49cb8d</a> :  Version bump to BP2A.250805.012 [core/build_id.mk]<br />
+<a href="https://android.googlesource.com/platform/build/+/7c8b119f3d">7c8b119f3d</a> :  Version bump to BP2A.250805.011 [core/build_id.mk]<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_build_release-show" class="showLink" onclick="show('platform_build_release');return false;">+</a><a href="#" id="platform_build_release-hide" class="hideLink" onclick="hide('platform_build_release');return false;">-</a>&nbsp;<a name="platform_build_release" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/build/release">platform/build/release</a></h2>
+<div id="platform_build_release"><a href="https://android.googlesource.com/platform/build/release/+/b11607ea3">b11607ea3</a> :  Select sqlite 3.44.5 on ap3a<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_cts-show" class="showLink" onclick="show('platform_cts');return false;">+</a><a href="#" id="platform_cts-hide" class="hideLink" onclick="hide('platform_cts');return false;">-</a>&nbsp;<a name="platform_cts" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/cts">platform/cts</a></h2>
+<div id="platform_cts"><a href="https://android.googlesource.com/platform/cts/+/1bcf948f5e5">1bcf948f5e5</a> :  Track DNG SDK 1.7.1 API changes<br />
+</div></p>
+
+<p><h2><a href="#" id="device_amlogic_yukawa-kernel-show" class="showLink" onclick="show('device_amlogic_yukawa-kernel');return false;">+</a><a href="#" id="device_amlogic_yukawa-kernel-hide" class="hideLink" onclick="hide('device_amlogic_yukawa-kernel');return false;">-</a>&nbsp;<a name="device_amlogic_yukawa-kernel" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/amlogic/yukawa-kernel">device/amlogic/yukawa-kernel</a></h2>
+<div id="device_amlogic_yukawa-kernel"><a href="https://android.googlesource.com/device/amlogic/yukawa-kernel/+/97d8b55">97d8b55</a> :  yukawa-kernel: Add kernel version 6.1.1 am: d234730f2c am: ea897dd10d<br />
+<a href="https://android.googlesource.com/device/amlogic/yukawa-kernel/+/d8a1758">d8a1758</a> :  yukawa-kernel: Update kernel version to 5.15.74 and enable WAKELOCKS am: d96b07b109 am: 4741251530 am: 4d83ad55b3<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_common_etm-show" class="showLink" onclick="show('device_google_common_etm');return false;">+</a><a href="#" id="device_google_common_etm-hide" class="hideLink" onclick="hide('device_google_common_etm');return false;">-</a>&nbsp;<a name="device_google_common_etm" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/common/etm">device/google/common/etm</a></h2>
+<div id="device_google_common_etm"><a href="https://android.googlesource.com/device/google/common/etm/+/6fc3df5">6fc3df5</a> :  Snap for 12704449 from e1a542245d4e5332cee41cb256820c728cd5acca to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_cuttlefish_prebuilts-show" class="showLink" onclick="show('device_google_cuttlefish_prebuilts');return false;">+</a><a href="#" id="device_google_cuttlefish_prebuilts-hide" class="hideLink" onclick="hide('device_google_cuttlefish_prebuilts');return false;">-</a>&nbsp;<a name="device_google_cuttlefish_prebuilts" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/cuttlefish_prebuilts">device/google/cuttlefish_prebuilts</a></h2>
+<div id="device_google_cuttlefish_prebuilts"><a href="https://android.googlesource.com/device/google/cuttlefish_prebuilts/+/6c98253">6c98253</a> :  Snap for 13204655 from 85f55e17354c524c5095cdbd9bdc2d53ffc6f252 to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_cuttlefish_vmm-show" class="showLink" onclick="show('device_google_cuttlefish_vmm');return false;">+</a><a href="#" id="device_google_cuttlefish_vmm-hide" class="hideLink" onclick="hide('device_google_cuttlefish_vmm');return false;">-</a>&nbsp;<a name="device_google_cuttlefish_vmm" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/cuttlefish_vmm">device/google/cuttlefish_vmm</a></h2>
+<div id="device_google_cuttlefish_vmm"><a href="https://android.googlesource.com/device/google/cuttlefish_vmm/+/dec7332">dec7332</a> :  Snap for 13241370 from c261e36e1b21b028514b327c7781d7b6174fd8da to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="device_google_trout-show" class="showLink" onclick="show('device_google_trout');return false;">+</a><a href="#" id="device_google_trout-hide" class="hideLink" onclick="hide('device_google_trout');return false;">-</a>&nbsp;<a name="device_google_trout" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/google/trout">device/google/trout</a></h2>
+<div id="device_google_trout"><a href="https://android.googlesource.com/device/google/trout/+/75e5877">75e5877</a> :  Snap for 13210474 from edc9f3216fec89d303ce23caaccf9e02914fe59d to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="device_linaro_dragonboard-kernel-show" class="showLink" onclick="show('device_linaro_dragonboard-kernel');return false;">+</a><a href="#" id="device_linaro_dragonboard-kernel-hide" class="hideLink" onclick="hide('device_linaro_dragonboard-kernel');return false;">-</a>&nbsp;<a name="device_linaro_dragonboard-kernel" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/linaro/dragonboard-kernel">device/linaro/dragonboard-kernel</a></h2>
+<div id="device_linaro_dragonboard-kernel"><a href="https://android.googlesource.com/device/linaro/dragonboard-kernel/+/8c2626c">8c2626c</a> :  Snap for 12829911 from ecd09da0790736a38646f88a76216ddff8129eb6 to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="device_linaro_hikey-kernel-show" class="showLink" onclick="show('device_linaro_hikey-kernel');return false;">+</a><a href="#" id="device_linaro_hikey-kernel-hide" class="hideLink" onclick="hide('device_linaro_hikey-kernel');return false;">-</a>&nbsp;<a name="device_linaro_hikey-kernel" class="nonLink">Project:</a> <a href="https://android.googlesource.com/device/linaro/hikey-kernel">device/linaro/hikey-kernel</a></h2>
+<div id="device_linaro_hikey-kernel"><a href="https://android.googlesource.com/device/linaro/hikey-kernel/+/f836f34">f836f34</a> :  [automerger skipped] Merge Android 14 QPR1 am: 09d1d59a3e -s ours am: c186543820 -s ours am: 189b83b39a -s ours<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_chromium-webview-show" class="showLink" onclick="show('platform_external_chromium-webview');return false;">+</a><a href="#" id="platform_external_chromium-webview-hide" class="hideLink" onclick="hide('platform_external_chromium-webview');return false;">-</a>&nbsp;<a name="platform_external_chromium-webview" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/chromium-webview">platform/external/chromium-webview</a></h2>
+<div id="platform_external_chromium-webview"><a href="https://android.googlesource.com/platform/external/chromium-webview/+/57206b6">57206b6</a> :  Snap for 13190096 from 104ff684529a8048505ce63e0b24898c5be88cb1 to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_chromiumos-config-show" class="showLink" onclick="show('platform_external_chromiumos-config');return false;">+</a><a href="#" id="platform_external_chromiumos-config-hide" class="hideLink" onclick="hide('platform_external_chromiumos-config');return false;">-</a>&nbsp;<a name="platform_external_chromiumos-config" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/chromiumos-config">platform/external/chromiumos-config</a></h2>
+<div id="platform_external_chromiumos-config"><a href="https://android.googlesource.com/platform/external/chromiumos-config/+/ecb65ad">ecb65ad</a> :  Snap for 13221802 from bb934edb483abf4c4edc83be1ad2cb8d5a81a06b to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_dng_sdk-show" class="showLink" onclick="show('platform_external_dng_sdk');return false;">+</a><a href="#" id="platform_external_dng_sdk-hide" class="hideLink" onclick="hide('platform_external_dng_sdk');return false;">-</a>&nbsp;<a name="platform_external_dng_sdk" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/dng_sdk">platform/external/dng_sdk</a></h2>
+<div id="platform_external_dng_sdk"><a href="https://android.googlesource.com/platform/external/dng_sdk/+/de700ad">de700ad</a> :  Crude DNG SDK 1.7.1 upgrade<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_linux-kselftest-show" class="showLink" onclick="show('platform_external_linux-kselftest');return false;">+</a><a href="#" id="platform_external_linux-kselftest-hide" class="hideLink" onclick="hide('platform_external_linux-kselftest');return false;">-</a>&nbsp;<a name="platform_external_linux-kselftest" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/linux-kselftest">platform/external/linux-kselftest</a></h2>
+<div id="platform_external_linux-kselftest"><a href="https://android.googlesource.com/platform/external/linux-kselftest/+/2e21443">2e21443</a> :  Snap for 13256841 from c691669f6298418e503b69f5575decb02dc8d681 to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_skia-show" class="showLink" onclick="show('platform_external_skia');return false;">+</a><a href="#" id="platform_external_skia-hide" class="hideLink" onclick="hide('platform_external_skia');return false;">-</a>&nbsp;<a name="platform_external_skia" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/skia">platform/external/skia</a></h2>
+<div id="platform_external_skia"><a href="https://android.googlesource.com/platform/external/skia/+/40c3f0a50f">40c3f0a50f</a> :  Backport DNG SDK 1.7.1 support in SkRawCodec<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_sqlite-show" class="showLink" onclick="show('platform_external_sqlite');return false;">+</a><a href="#" id="platform_external_sqlite-hide" class="hideLink" onclick="hide('platform_external_sqlite');return false;">-</a>&nbsp;<a name="platform_external_sqlite" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/sqlite">platform/external/sqlite</a></h2>
+<div id="platform_external_sqlite"><a href="https://android.googlesource.com/platform/external/sqlite/+/cbebed3">cbebed3</a> :  Install sqlite 3.44.5 source files<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_subsampling-scale-image-view-show" class="showLink" onclick="show('platform_external_subsampling-scale-image-view');return false;">+</a><a href="#" id="platform_external_subsampling-scale-image-view-hide" class="hideLink" onclick="hide('platform_external_subsampling-scale-image-view');return false;">-</a>&nbsp;<a name="platform_external_subsampling-scale-image-view" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/subsampling-scale-image-view">platform/external/subsampling-scale-image-view</a></h2>
+<div id="platform_external_subsampling-scale-image-view"><a href="https://android.googlesource.com/platform/external/subsampling-scale-image-view/+/7c166c4">7c166c4</a> :  Snap for 12704449 from c1f2ae5a70a28653cd5500963619c527a8eaefc7 to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_external_timezone-boundary-builder-show" class="showLink" onclick="show('platform_external_timezone-boundary-builder');return false;">+</a><a href="#" id="platform_external_timezone-boundary-builder-hide" class="hideLink" onclick="hide('platform_external_timezone-boundary-builder');return false;">-</a>&nbsp;<a name="platform_external_timezone-boundary-builder" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/external/timezone-boundary-builder">platform/external/timezone-boundary-builder</a></h2>
+<div id="platform_external_timezone-boundary-builder"><a href="https://android.googlesource.com/platform/external/timezone-boundary-builder/+/a5fcb74">a5fcb74</a> :  Update OWNERS file to remove nfuller@ am: b772132222<br />
+<a href="https://android.googlesource.com/platform/external/timezone-boundary-builder/+/f0df979">f0df979</a> :  Android additions to timezone-boundary-builder am: 4fd94cfcf9 am: 1d4954a75e am: 416012905c am: 82d8ad561d<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_av-show" class="showLink" onclick="show('platform_frameworks_av');return false;">+</a><a href="#" id="platform_frameworks_av-hide" class="hideLink" onclick="hide('platform_frameworks_av');return false;">-</a>&nbsp;<a name="platform_frameworks_av" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/av">platform/frameworks/av</a></h2>
+<div id="platform_frameworks_av"><a href="https://android.googlesource.com/platform/frameworks/av/+/8febdebcb5">8febdebcb5</a> :  C2SoftDav1dDec: configure decoder to output only one layer in SVC mode<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_base-show" class="showLink" onclick="show('platform_frameworks_base');return false;">+</a><a href="#" id="platform_frameworks_base-hide" class="hideLink" onclick="hide('platform_frameworks_base');return false;">-</a>&nbsp;<a name="platform_frameworks_base" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/base">platform/frameworks/base</a></h2>
+<div id="platform_frameworks_base"><a href="https://android.googlesource.com/platform/frameworks/base/+/4d488a6a05ab">4d488a6a05ab</a> :  Revert "Fix build failure in release branch"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/7dd276c1cf34">7dd276c1cf34</a> :  Revert "Ignore pinned Windows"<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/de27b16b1af8">de27b16b1af8</a> :  Validate displayName for AssociationRequest<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/0f3e248787d8">0f3e248787d8</a> :  Add missing import in test<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/84dd2b90f4a2">84dd2b90f4a2</a> :  Don't allow 3p apps to become voice recognizer automatically<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d6df825fda3a">d6df825fda3a</a> :  Enforce a hard limit for the size of images to be decoded<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d00bcda9f42d">d00bcda9f42d</a> :  Get all accounts no matter the visibility<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/d550a457e65c">d550a457e65c</a> :  Sanitize window private flags based on caller permissions.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9489a5dcd3cd">9489a5dcd3cd</a> :  print: Prevent cross-user icon access<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/9fb37191609f">9fb37191609f</a> :  Add onKeyEvent, to support KEYCODE_HOME<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/70ab82c4546a">70ab82c4546a</a> :  Do not use BIND_INCLUDE_CAPABILITIES when bind PrintService<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/6d1697c96c5c">6d1697c96c5c</a> :  RESTRICT AUTOMERGE: Backport Cut max duration for default transition to 1500<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/31e77d73c5e6">31e77d73c5e6</a> :  Don't allow read truncation or appending for file operations.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/db86972777c8">db86972777c8</a> :  Allow resetting the voice recognition service if its package uninstalled<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/a5795fc0cf1f">a5795fc0cf1f</a> :  Check length of MBR component name properties<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ec0c32ea736b">ec0c32ea736b</a> :  Disallow factory reset while in DSU mode<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/aa9fbb1b74eb">aa9fbb1b74eb</a> :  Check the strongAuthTracker for lockdown instead of LockPatternUtils<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/2ae33e496027">2ae33e496027</a> :  Protect shell overriding the carrier config<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/03d704069914">03d704069914</a> :  Use ParceledListSlice to paginate response from getPackagesForOpsForDevice binder API<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/c69e16c3efda">c69e16c3efda</a> :  Ensure exit animations are canceled prior to user switch<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/93629e575f69">93629e575f69</a> :  Prevent accidental creation of PackagePreferences for non-existing packages<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b4c6786312a2">b4c6786312a2</a> :  Validate IME metadata before parsing<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/de2cbccd1070">de2cbccd1070</a> :  Remove all pending keyguard exits on SHOW<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/68170bad5225">68170bad5225</a> :  GRANT TRUSTED_OVERLAY after PiP is entered<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/ea2bcc665342">ea2bcc665342</a> :  Make sure to disassociate all the packages with shared UID<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/5ec1cdae1805">5ec1cdae1805</a> :  [CDM] Limit NLS revoke to applicable roles.<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/848f94492175">848f94492175</a> :  Remove exception for Q- apps from app op validation<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/2aeba76a58c1">2aeba76a58c1</a> :  Limit usages sent to safety center by user<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/02751bc65824">02751bc65824</a> :  Do not recycle Parcel when lazy value is used<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/08a0766708db">08a0766708db</a> :  Cap the number of channels that an NLS can create for other packages<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/b812baa1463c">b812baa1463c</a> :  Delete updateNotificationChannelGroupFromPrivilegedListener<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/78760f098fab">78760f098fab</a> :  Validate user on biometric auth and keyguard done<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/eb19b27ed8ab">eb19b27ed8ab</a> :  Add flag to exclude capability propagation when connecting MediaBrowser<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/1cfd8237b5a8">1cfd8237b5a8</a> :  Use provided calling uid/pid for checking intercept-global-drag flag<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/e707f6600330">e707f6600330</a> :  Add WIU/BFSL allowlisting to MediaButtonReceiverHolder.send<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/039030a6b0e7">039030a6b0e7</a> :  Do not propagate WIU/BFSL for MediaController.sendCommand<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/28579dff4305">28579dff4305</a> :  Add resolveActivityAsUserForExplicitType api to pm<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/fb8f76eca907">fb8f76eca907</a> :  Check sound Uri permission when creating a notification channel<br />
+<a href="https://android.googlesource.com/platform/frameworks/base/+/31989869759e">31989869759e</a> :  [CDM] Revoke NLS when all associations are removed.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_native-show" class="showLink" onclick="show('platform_frameworks_native');return false;">+</a><a href="#" id="platform_frameworks_native-hide" class="hideLink" onclick="hide('platform_frameworks_native');return false;">-</a>&nbsp;<a name="platform_frameworks_native" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/native">platform/frameworks/native</a></h2>
+<div id="platform_frameworks_native"><a href="https://android.googlesource.com/platform/frameworks/native/+/de59cf7083">de59cf7083</a> :  Add each blur region as a separate request<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/cc34c7b416">cc34c7b416</a> :  RESTRICT AUTOMERGE: Backport When an opaque window has alpha &lt; 0.5, don't let it receive touches.<br />
+<a href="https://android.googlesource.com/platform/frameworks/native/+/6ffdde944d">6ffdde944d</a> :  Set mDataSize properly in appendFrom<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_frameworks_opt_telephony-show" class="showLink" onclick="show('platform_frameworks_opt_telephony');return false;">+</a><a href="#" id="platform_frameworks_opt_telephony-hide" class="hideLink" onclick="hide('platform_frameworks_opt_telephony');return false;">-</a>&nbsp;<a name="platform_frameworks_opt_telephony" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/frameworks/opt/telephony">platform/frameworks/opt/telephony</a></h2>
+<div id="platform_frameworks_opt_telephony"><a href="https://android.googlesource.com/platform/frameworks/opt/telephony/+/fee68bcdcf">fee68bcdcf</a> :  [Telephony][Security Fix] Launch Browser only if device is unlocked.<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_6.1_arm64-show" class="showLink" onclick="show('kernel_prebuilts_6.1_arm64');return false;">+</a><a href="#" id="kernel_prebuilts_6.1_arm64-hide" class="hideLink" onclick="hide('kernel_prebuilts_6.1_arm64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_6.1_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/6.1/arm64">kernel/prebuilts/6.1/arm64</a></h2>
+<div id="kernel_prebuilts_6.1_arm64"><a href="https://android.googlesource.com/kernel/prebuilts/6.1/arm64/+/45f90b2">45f90b2</a> :  Update kernel to builds 12109370 am: 8b66e0b639 am: 2e6bdd9dbd<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_6.1_x86-64-show" class="showLink" onclick="show('kernel_prebuilts_6.1_x86-64');return false;">+</a><a href="#" id="kernel_prebuilts_6.1_x86-64-hide" class="hideLink" onclick="hide('kernel_prebuilts_6.1_x86-64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_6.1_x86-64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/6.1/x86-64">kernel/prebuilts/6.1/x86-64</a></h2>
+<div id="kernel_prebuilts_6.1_x86-64"><a href="https://android.googlesource.com/kernel/prebuilts/6.1/x86-64/+/4d8767b">4d8767b</a> :  Update kernel to builds 12109370 am: 21a19614cd am: bb2082554f<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_6.12_arm64-show" class="showLink" onclick="show('kernel_prebuilts_6.12_arm64');return false;">+</a><a href="#" id="kernel_prebuilts_6.12_arm64-hide" class="hideLink" onclick="hide('kernel_prebuilts_6.12_arm64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_6.12_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/6.12/arm64">kernel/prebuilts/6.12/arm64</a></h2>
+<div id="kernel_prebuilts_6.12_arm64"><a href="https://android.googlesource.com/kernel/prebuilts/6.12/arm64/+/0af9965">0af9965</a> :  Snap for 13264465 from 6abb5ba9fe2bdb66f0a0dfa1ba3e9a834ff0d3b3 to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_6.12_x86-64-show" class="showLink" onclick="show('kernel_prebuilts_6.12_x86-64');return false;">+</a><a href="#" id="kernel_prebuilts_6.12_x86-64-hide" class="hideLink" onclick="hide('kernel_prebuilts_6.12_x86-64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_6.12_x86-64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/6.12/x86-64">kernel/prebuilts/6.12/x86-64</a></h2>
+<div id="kernel_prebuilts_6.12_x86-64"><a href="https://android.googlesource.com/kernel/prebuilts/6.12/x86-64/+/0cbffc1">0cbffc1</a> :  Snap for 13264465 from 34b03c542a18040c4330deb8fdf5d8b544bea849 to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_6.6_arm64-show" class="showLink" onclick="show('kernel_prebuilts_6.6_arm64');return false;">+</a><a href="#" id="kernel_prebuilts_6.6_arm64-hide" class="hideLink" onclick="hide('kernel_prebuilts_6.6_arm64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_6.6_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/6.6/arm64">kernel/prebuilts/6.6/arm64</a></h2>
+<div id="kernel_prebuilts_6.6_arm64"><a href="https://android.googlesource.com/kernel/prebuilts/6.6/arm64/+/8103088">8103088</a> :  Snap for 13003345 from c5d8462ef8267f3097ea091d8c0dab930095f530 to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_6.6_x86-64-show" class="showLink" onclick="show('kernel_prebuilts_6.6_x86-64');return false;">+</a><a href="#" id="kernel_prebuilts_6.6_x86-64-hide" class="hideLink" onclick="hide('kernel_prebuilts_6.6_x86-64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_6.6_x86-64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/6.6/x86-64">kernel/prebuilts/6.6/x86-64</a></h2>
+<div id="kernel_prebuilts_6.6_x86-64"><a href="https://android.googlesource.com/kernel/prebuilts/6.6/x86-64/+/88d6379">88d6379</a> :  Snap for 13003345 from fddeecb1e9b6f5311ba3e38a9520e8c336641bf5 to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_common-modules_trusty_6.12_arm64-show" class="showLink" onclick="show('kernel_prebuilts_common-modules_trusty_6.12_arm64');return false;">+</a><a href="#" id="kernel_prebuilts_common-modules_trusty_6.12_arm64-hide" class="hideLink" onclick="hide('kernel_prebuilts_common-modules_trusty_6.12_arm64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_common-modules_trusty_6.12_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/common-modules/trusty/6.12/arm64">kernel/prebuilts/common-modules/trusty/6.12/arm64</a></h2>
+<div id="kernel_prebuilts_common-modules_trusty_6.12_arm64"><a href="https://android.googlesource.com/kernel/prebuilts/common-modules/trusty/6.12/arm64/+/0343e6f">0343e6f</a> :  Snap for 13204655 from 0bcb3e4e3a6ce5eb4ac56e2a54e380d995f2eebf to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_common-modules_trusty_6.6_arm64-show" class="showLink" onclick="show('kernel_prebuilts_common-modules_trusty_6.6_arm64');return false;">+</a><a href="#" id="kernel_prebuilts_common-modules_trusty_6.6_arm64-hide" class="hideLink" onclick="hide('kernel_prebuilts_common-modules_trusty_6.6_arm64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_common-modules_trusty_6.6_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/common-modules/trusty/6.6/arm64">kernel/prebuilts/common-modules/trusty/6.6/arm64</a></h2>
+<div id="kernel_prebuilts_common-modules_trusty_6.6_arm64"><a href="https://android.googlesource.com/kernel/prebuilts/common-modules/trusty/6.6/arm64/+/60e4a7e">60e4a7e</a> :  Snap for 12525705 from 8dabfec8672d6097db7a355137cd005c117b7fc6 to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_common-modules_virtual-device_6.1_arm64-show" class="showLink" onclick="show('kernel_prebuilts_common-modules_virtual-device_6.1_arm64');return false;">+</a><a href="#" id="kernel_prebuilts_common-modules_virtual-device_6.1_arm64-hide" class="hideLink" onclick="hide('kernel_prebuilts_common-modules_virtual-device_6.1_arm64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_common-modules_virtual-device_6.1_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/6.1/arm64">kernel/prebuilts/common-modules/virtual-device/6.1/arm64</a></h2>
+<div id="kernel_prebuilts_common-modules_virtual-device_6.1_arm64"><a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/6.1/arm64/+/4d32a49">4d32a49</a> :  Update kernel to builds 12109370 am: a78a61842b am: 7aa3aaebc6<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_common-modules_virtual-device_6.1_x86-64-show" class="showLink" onclick="show('kernel_prebuilts_common-modules_virtual-device_6.1_x86-64');return false;">+</a><a href="#" id="kernel_prebuilts_common-modules_virtual-device_6.1_x86-64-hide" class="hideLink" onclick="hide('kernel_prebuilts_common-modules_virtual-device_6.1_x86-64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_common-modules_virtual-device_6.1_x86-64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/6.1/x86-64">kernel/prebuilts/common-modules/virtual-device/6.1/x86-64</a></h2>
+<div id="kernel_prebuilts_common-modules_virtual-device_6.1_x86-64"><a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/6.1/x86-64/+/8da1ee1">8da1ee1</a> :  Update kernel to builds 12109370 am: a97cc45e93 am: b4eb18a288<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_common-modules_virtual-device_6.12_arm64-show" class="showLink" onclick="show('kernel_prebuilts_common-modules_virtual-device_6.12_arm64');return false;">+</a><a href="#" id="kernel_prebuilts_common-modules_virtual-device_6.12_arm64-hide" class="hideLink" onclick="hide('kernel_prebuilts_common-modules_virtual-device_6.12_arm64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_common-modules_virtual-device_6.12_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/6.12/arm64">kernel/prebuilts/common-modules/virtual-device/6.12/arm64</a></h2>
+<div id="kernel_prebuilts_common-modules_virtual-device_6.12_arm64"><a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/6.12/arm64/+/999ed1c">999ed1c</a> :  Snap for 13264465 from e2069c5f3b1256a8633e321d24d3ef07613474e1 to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_common-modules_virtual-device_6.12_x86-64-show" class="showLink" onclick="show('kernel_prebuilts_common-modules_virtual-device_6.12_x86-64');return false;">+</a><a href="#" id="kernel_prebuilts_common-modules_virtual-device_6.12_x86-64-hide" class="hideLink" onclick="hide('kernel_prebuilts_common-modules_virtual-device_6.12_x86-64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_common-modules_virtual-device_6.12_x86-64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/6.12/x86-64">kernel/prebuilts/common-modules/virtual-device/6.12/x86-64</a></h2>
+<div id="kernel_prebuilts_common-modules_virtual-device_6.12_x86-64"><a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/6.12/x86-64/+/6f3058f">6f3058f</a> :  Snap for 13264465 from bdb1acfb0e6a0431a3b605b2f706cb213c2ab0c4 to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_common-modules_virtual-device_6.6_arm64-show" class="showLink" onclick="show('kernel_prebuilts_common-modules_virtual-device_6.6_arm64');return false;">+</a><a href="#" id="kernel_prebuilts_common-modules_virtual-device_6.6_arm64-hide" class="hideLink" onclick="hide('kernel_prebuilts_common-modules_virtual-device_6.6_arm64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_common-modules_virtual-device_6.6_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/6.6/arm64">kernel/prebuilts/common-modules/virtual-device/6.6/arm64</a></h2>
+<div id="kernel_prebuilts_common-modules_virtual-device_6.6_arm64"><a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/6.6/arm64/+/359e60a">359e60a</a> :  Snap for 13003345 from 5d091941c9e16a32ab9c25f742c4c10db26946f2 to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_common-modules_virtual-device_6.6_x86-64-show" class="showLink" onclick="show('kernel_prebuilts_common-modules_virtual-device_6.6_x86-64');return false;">+</a><a href="#" id="kernel_prebuilts_common-modules_virtual-device_6.6_x86-64-hide" class="hideLink" onclick="hide('kernel_prebuilts_common-modules_virtual-device_6.6_x86-64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_common-modules_virtual-device_6.6_x86-64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/6.6/x86-64">kernel/prebuilts/common-modules/virtual-device/6.6/x86-64</a></h2>
+<div id="kernel_prebuilts_common-modules_virtual-device_6.6_x86-64"><a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/6.6/x86-64/+/b29a09b">b29a09b</a> :  Snap for 13003345 from 6d94173fbf542e6a4947e8ed65be8c09c0fe535c to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_common-modules_virtual-device_mainline_arm64-show" class="showLink" onclick="show('kernel_prebuilts_common-modules_virtual-device_mainline_arm64');return false;">+</a><a href="#" id="kernel_prebuilts_common-modules_virtual-device_mainline_arm64-hide" class="hideLink" onclick="hide('kernel_prebuilts_common-modules_virtual-device_mainline_arm64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_common-modules_virtual-device_mainline_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/mainline/arm64">kernel/prebuilts/common-modules/virtual-device/mainline/arm64</a></h2>
+<div id="kernel_prebuilts_common-modules_virtual-device_mainline_arm64"><a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/mainline/arm64/+/c1b6f17">c1b6f17</a> :  [automerger skipped] Empty Merge Android U (ab/10368041) am: 79b9e0dc36 -s ours am: a550da44ae -s ours am: 3a1cb446e6 -s ours am: 1d5dd322a3 -s ours<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_common-modules_virtual-device_mainline_x86-64-show" class="showLink" onclick="show('kernel_prebuilts_common-modules_virtual-device_mainline_x86-64');return false;">+</a><a href="#" id="kernel_prebuilts_common-modules_virtual-device_mainline_x86-64-hide" class="hideLink" onclick="hide('kernel_prebuilts_common-modules_virtual-device_mainline_x86-64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_common-modules_virtual-device_mainline_x86-64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/mainline/x86-64">kernel/prebuilts/common-modules/virtual-device/mainline/x86-64</a></h2>
+<div id="kernel_prebuilts_common-modules_virtual-device_mainline_x86-64"><a href="https://android.googlesource.com/kernel/prebuilts/common-modules/virtual-device/mainline/x86-64/+/8686f19">8686f19</a> :  Update kernel to builds 8548111 am: ccb6ca3ffe am: 6a32abb3fb am: 375d168905 am: d30b4e66c0 am: 4015491110<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_mainline_arm64-show" class="showLink" onclick="show('kernel_prebuilts_mainline_arm64');return false;">+</a><a href="#" id="kernel_prebuilts_mainline_arm64-hide" class="hideLink" onclick="hide('kernel_prebuilts_mainline_arm64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_mainline_arm64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/mainline/arm64">kernel/prebuilts/mainline/arm64</a></h2>
+<div id="kernel_prebuilts_mainline_arm64"><a href="https://android.googlesource.com/kernel/prebuilts/mainline/arm64/+/49cdfc2">49cdfc2</a> :  Update kernel to builds 10710438 am: 597e8872a3 am: f873c5d3d9 am: 69ed05ac06 am: cca228517e am: 04f898e666<br />
+</div></p>
+
+<p><h2><a href="#" id="kernel_prebuilts_mainline_x86-64-show" class="showLink" onclick="show('kernel_prebuilts_mainline_x86-64');return false;">+</a><a href="#" id="kernel_prebuilts_mainline_x86-64-hide" class="hideLink" onclick="hide('kernel_prebuilts_mainline_x86-64');return false;">-</a>&nbsp;<a name="kernel_prebuilts_mainline_x86-64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/kernel/prebuilts/mainline/x86-64">kernel/prebuilts/mainline/x86-64</a></h2>
+<div id="kernel_prebuilts_mainline_x86-64"><a href="https://android.googlesource.com/kernel/prebuilts/mainline/x86-64/+/51a4241">51a4241</a> :  Update kernel to builds 8548111 am: f70133d6d1 am: 8143c99639 am: c9c947bf0d am: 681b388c58 am: 3874b05bbf<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_CertInstaller-show" class="showLink" onclick="show('platform_packages_apps_CertInstaller');return false;">+</a><a href="#" id="platform_packages_apps_CertInstaller-hide" class="hideLink" onclick="hide('platform_packages_apps_CertInstaller');return false;">-</a>&nbsp;<a name="platform_packages_apps_CertInstaller" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/CertInstaller">platform/packages/apps/CertInstaller</a></h2>
+<div id="platform_packages_apps_CertInstaller"><a href="https://android.googlesource.com/platform/packages/apps/CertInstaller/+/d688ebd">d688ebd</a> :  Prevent settings impostors from installing CA certs<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Launcher3-show" class="showLink" onclick="show('platform_packages_apps_Launcher3');return false;">+</a><a href="#" id="platform_packages_apps_Launcher3-hide" class="hideLink" onclick="hide('platform_packages_apps_Launcher3');return false;">-</a>&nbsp;<a name="platform_packages_apps_Launcher3" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Launcher3">platform/packages/apps/Launcher3</a></h2>
+<div id="platform_packages_apps_Launcher3"><a href="https://android.googlesource.com/platform/packages/apps/Launcher3/+/7628af9bf7">7628af9bf7</a> :  Send KEYCODE_HOME for home button instead of startActivity directly<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_apps_Settings-show" class="showLink" onclick="show('platform_packages_apps_Settings');return false;">+</a><a href="#" id="platform_packages_apps_Settings-hide" class="hideLink" onclick="hide('platform_packages_apps_Settings');return false;">-</a>&nbsp;<a name="platform_packages_apps_Settings" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/apps/Settings">platform/packages/apps/Settings</a></h2>
+<div id="platform_packages_apps_Settings"><a href="https://android.googlesource.com/platform/packages/apps/Settings/+/e62ac1ecd3a">e62ac1ecd3a</a> :  Import translations. DO NOT MERGE ANYWHERE<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/8ec6581ae70">8ec6581ae70</a> :  Backport BT pairing dialog changes<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/aa744e8988f">aa744e8988f</a> :  [nfc] Fix string injection in default payment app selector<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/83447688f8e">83447688f8e</a> :  Add check to prevent privilege escalation from trampoline added in change Ie469c47005afb941f5646a2f790736362c23c697.<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/596c7b9911f">596c7b9911f</a> :  Hide sensistive content from locked profiles<br />
+<a href="https://android.googlesource.com/platform/packages/apps/Settings/+/586f8dedd8e">586f8dedd8e</a> :  Prevent SettingsSliceProvider from accessing unused packages<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_ArtPrebuilt-show" class="showLink" onclick="show('platform_packages_modules_ArtPrebuilt');return false;">+</a><a href="#" id="platform_packages_modules_ArtPrebuilt-hide" class="hideLink" onclick="hide('platform_packages_modules_ArtPrebuilt');return false;">-</a>&nbsp;<a name="platform_packages_modules_ArtPrebuilt" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/ArtPrebuilt">platform/packages/modules/ArtPrebuilt</a></h2>
+<div id="platform_packages_modules_ArtPrebuilt"><a href="https://android.googlesource.com/platform/packages/modules/ArtPrebuilt/+/bee62ee">bee62ee</a> :  Updated SDK snapshot path. am: 41cd632081 am: 3c180d0112 am: 6d17a42fce am: 0aa2c7adbe am: 3f5d78bb6b<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_Bluetooth-show" class="showLink" onclick="show('platform_packages_modules_Bluetooth');return false;">+</a><a href="#" id="platform_packages_modules_Bluetooth-hide" class="hideLink" onclick="hide('platform_packages_modules_Bluetooth');return false;">-</a>&nbsp;<a name="platform_packages_modules_Bluetooth" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/Bluetooth">platform/packages/modules/Bluetooth</a></h2>
+<div id="platform_packages_modules_Bluetooth"><a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/769a3dea80">769a3dea80</a> :  Remove flag save_peer_csrk_after_ltk_gen<br />
+<a href="https://android.googlesource.com/platform/packages/modules/Bluetooth/+/7ccb456f6d">7ccb456f6d</a> :  Remove flag bonded_device_smp_failure_handling<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_modules_IntentResolver-show" class="showLink" onclick="show('platform_packages_modules_IntentResolver');return false;">+</a><a href="#" id="platform_packages_modules_IntentResolver-hide" class="hideLink" onclick="hide('platform_packages_modules_IntentResolver');return false;">-</a>&nbsp;<a name="platform_packages_modules_IntentResolver" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/modules/IntentResolver">platform/packages/modules/IntentResolver</a></h2>
+<div id="platform_packages_modules_IntentResolver"><a href="https://android.googlesource.com/platform/packages/modules/IntentResolver/+/bbe2dc3f">bbe2dc3f</a> :  Verify caller access rights for the additional content URI.<br />
+<a href="https://android.googlesource.com/platform/packages/modules/IntentResolver/+/4e6cf528">4e6cf528</a> :  Use the new packageManager API to forward intents<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_services_Mms-show" class="showLink" onclick="show('platform_packages_services_Mms');return false;">+</a><a href="#" id="platform_packages_services_Mms-hide" class="hideLink" onclick="hide('platform_packages_services_Mms');return false;">-</a>&nbsp;<a name="platform_packages_services_Mms" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Mms">platform/packages/services/Mms</a></h2>
+<div id="platform_packages_services_Mms"><a href="https://android.googlesource.com/platform/packages/services/Mms/+/c60a828">c60a828</a> :  Verify calling user on mms downloads<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_services_Telecomm-show" class="showLink" onclick="show('platform_packages_services_Telecomm');return false;">+</a><a href="#" id="platform_packages_services_Telecomm-hide" class="hideLink" onclick="hide('platform_packages_services_Telecomm');return false;">-</a>&nbsp;<a name="platform_packages_services_Telecomm" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Telecomm">platform/packages/services/Telecomm</a></h2>
+<div id="platform_packages_services_Telecomm"><a href="https://android.googlesource.com/platform/packages/services/Telecomm/+/a43a880be">a43a880be</a> :  Catch IllegalArgumentException when unbinding CallRedirectionServiceConnection<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_packages_services_Telephony-show" class="showLink" onclick="show('platform_packages_services_Telephony');return false;">+</a><a href="#" id="platform_packages_services_Telephony-hide" class="hideLink" onclick="hide('platform_packages_services_Telephony');return false;">-</a>&nbsp;<a name="platform_packages_services_Telephony" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/packages/services/Telephony">platform/packages/services/Telephony</a></h2>
+<div id="platform_packages_services_Telephony"><a href="https://android.googlesource.com/platform/packages/services/Telephony/+/2afec5750">2afec5750</a> :  Restricting UserBuild from presistent carrierConfig Override<br />
+<a href="https://android.googlesource.com/platform/packages/services/Telephony/+/2f0eeeee7">2f0eeeee7</a> :  Protect shell overriding the carrier config<br />
+<a href="https://android.googlesource.com/platform/packages/services/Telephony/+/851fc787e">851fc787e</a> :  fix: Use permission check for contact URI validation<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_abi-dumps_ndk-show" class="showLink" onclick="show('platform_prebuilts_abi-dumps_ndk');return false;">+</a><a href="#" id="platform_prebuilts_abi-dumps_ndk-hide" class="hideLink" onclick="hide('platform_prebuilts_abi-dumps_ndk');return false;">-</a>&nbsp;<a name="platform_prebuilts_abi-dumps_ndk" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/abi-dumps/ndk">platform/prebuilts/abi-dumps/ndk</a></h2>
+<div id="platform_prebuilts_abi-dumps_ndk"><a href="https://android.googlesource.com/platform/prebuilts/abi-dumps/ndk/+/49480b5">49480b5</a> :  Snap for 13190096 from c19181376c4abb8f8650eddd38fb3ad5a6950cdf to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_abi-dumps_platform-show" class="showLink" onclick="show('platform_prebuilts_abi-dumps_platform');return false;">+</a><a href="#" id="platform_prebuilts_abi-dumps_platform-hide" class="hideLink" onclick="hide('platform_prebuilts_abi-dumps_platform');return false;">-</a>&nbsp;<a name="platform_prebuilts_abi-dumps_platform" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/abi-dumps/platform">platform/prebuilts/abi-dumps/platform</a></h2>
+<div id="platform_prebuilts_abi-dumps_platform"><a href="https://android.googlesource.com/platform/prebuilts/abi-dumps/platform/+/2b2389d">2b2389d</a> :  Snap for 13190096 from e8c8c12f9fafa626fffa00b787b54b68b37718ea to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_abi-dumps_vndk-show" class="showLink" onclick="show('platform_prebuilts_abi-dumps_vndk');return false;">+</a><a href="#" id="platform_prebuilts_abi-dumps_vndk-hide" class="hideLink" onclick="hide('platform_prebuilts_abi-dumps_vndk');return false;">-</a>&nbsp;<a name="platform_prebuilts_abi-dumps_vndk" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/abi-dumps/vndk">platform/prebuilts/abi-dumps/vndk</a></h2>
+<div id="platform_prebuilts_abi-dumps_vndk"><a href="https://android.googlesource.com/platform/prebuilts/abi-dumps/vndk/+/c560a9e">c560a9e</a> :  Snap for 13190096 from 8b5756a44b17ecb41c82c58640d6b4f291d7ffd8 to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_android-emulator-show" class="showLink" onclick="show('platform_prebuilts_android-emulator');return false;">+</a><a href="#" id="platform_prebuilts_android-emulator-hide" class="hideLink" onclick="hide('platform_prebuilts_android-emulator');return false;">-</a>&nbsp;<a name="platform_prebuilts_android-emulator" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/android-emulator">platform/prebuilts/android-emulator</a></h2>
+<div id="platform_prebuilts_android-emulator"><a href="https://android.googlesource.com/platform/prebuilts/android-emulator/+/0015ef3">0015ef3</a> :  Snap for 13143403 from bc397b98bf7e8c44eb40fac6628b7c3f7d4920e1 to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_asuite-show" class="showLink" onclick="show('platform_prebuilts_asuite');return false;">+</a><a href="#" id="platform_prebuilts_asuite-hide" class="hideLink" onclick="hide('platform_prebuilts_asuite');return false;">-</a>&nbsp;<a name="platform_prebuilts_asuite" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/asuite">platform/prebuilts/asuite</a></h2>
+<div id="platform_prebuilts_asuite"><a href="https://android.googlesource.com/platform/prebuilts/asuite/+/13d8ac2">13d8ac2</a> :  Snap for 13241370 from 0c4bd0895d69ab8701daad83597bd2bb28560a54 to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_bazel_common-show" class="showLink" onclick="show('platform_prebuilts_bazel_common');return false;">+</a><a href="#" id="platform_prebuilts_bazel_common-hide" class="hideLink" onclick="hide('platform_prebuilts_bazel_common');return false;">-</a>&nbsp;<a name="platform_prebuilts_bazel_common" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/bazel/common">platform/prebuilts/bazel/common</a></h2>
+<div id="platform_prebuilts_bazel_common"><a href="https://android.googlesource.com/platform/prebuilts/bazel/common/+/e24e8ba">e24e8ba</a> :  [automerger skipped] Empty merge of Android 24Q2 Release (ab/11526283) to aosp-main-future am: 129f2136e3 -s ours<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_bazel_linux-x86_64-show" class="showLink" onclick="show('platform_prebuilts_bazel_linux-x86_64');return false;">+</a><a href="#" id="platform_prebuilts_bazel_linux-x86_64-hide" class="hideLink" onclick="hide('platform_prebuilts_bazel_linux-x86_64');return false;">-</a>&nbsp;<a name="platform_prebuilts_bazel_linux-x86_64" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/bazel/linux-x86_64">platform/prebuilts/bazel/linux-x86_64</a></h2>
+<div id="platform_prebuilts_bazel_linux-x86_64"><a href="https://android.googlesource.com/platform/prebuilts/bazel/linux-x86_64/+/5c92123">5c92123</a> :  linux changes for 1e02f4 release am: 4c41a32375 am: 47e7a71df9 am: 16ed588086 am: 071c2799a1 am: 7a1bb74817<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_build-tools-show" class="showLink" onclick="show('platform_prebuilts_build-tools');return false;">+</a><a href="#" id="platform_prebuilts_build-tools-hide" class="hideLink" onclick="hide('platform_prebuilts_build-tools');return false;">-</a>&nbsp;<a name="platform_prebuilts_build-tools" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/build-tools">platform/prebuilts/build-tools</a></h2>
+<div id="platform_prebuilts_build-tools"><a href="https://android.googlesource.com/platform/prebuilts/build-tools/+/8c01d80">8c01d80</a> :  Snap for 13222886 from 39bd2eafa4dbe46fe1895730818b9ac403d2bb8e to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_bundletool-show" class="showLink" onclick="show('platform_prebuilts_bundletool');return false;">+</a><a href="#" id="platform_prebuilts_bundletool-hide" class="hideLink" onclick="hide('platform_prebuilts_bundletool');return false;">-</a>&nbsp;<a name="platform_prebuilts_bundletool" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/bundletool">platform/prebuilts/bundletool</a></h2>
+<div id="platform_prebuilts_bundletool"><a href="https://android.googlesource.com/platform/prebuilts/bundletool/+/4d55b55">4d55b55</a> :  [automerger skipped] Update bundletool am: 6e468659d4 am: 516e89e885 am: 6fef60ecff am: a01721af95 am: 7c0b35ad39 -s ours<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_checkcolor-show" class="showLink" onclick="show('platform_prebuilts_checkcolor');return false;">+</a><a href="#" id="platform_prebuilts_checkcolor-hide" class="hideLink" onclick="hide('platform_prebuilts_checkcolor');return false;">-</a>&nbsp;<a name="platform_prebuilts_checkcolor" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/checkcolor">platform/prebuilts/checkcolor</a></h2>
+<div id="platform_prebuilts_checkcolor"><a href="https://android.googlesource.com/platform/prebuilts/checkcolor/+/47d4cfb">47d4cfb</a> :  Update checkcolor.py hashbang to Python 3 am: ee59816895 am: 8b7e6cc073 am: 4f8c37e10d am: 383d3e0bf1<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_checkstyle-show" class="showLink" onclick="show('platform_prebuilts_checkstyle');return false;">+</a><a href="#" id="platform_prebuilts_checkstyle-hide" class="hideLink" onclick="hide('platform_prebuilts_checkstyle');return false;">-</a>&nbsp;<a name="platform_prebuilts_checkstyle" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/checkstyle">platform/prebuilts/checkstyle</a></h2>
+<div id="platform_prebuilts_checkstyle"><a href="https://android.googlesource.com/platform/prebuilts/checkstyle/+/cad97af">cad97af</a> :  Snap for 13129673 from 7579e17ab9e51adeb180e00be9ff222777613670 to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_clang-tools-show" class="showLink" onclick="show('platform_prebuilts_clang-tools');return false;">+</a><a href="#" id="platform_prebuilts_clang-tools-hide" class="hideLink" onclick="hide('platform_prebuilts_clang-tools');return false;">-</a>&nbsp;<a name="platform_prebuilts_clang-tools" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/clang-tools">platform/prebuilts/clang-tools</a></h2>
+<div id="platform_prebuilts_clang-tools"><a href="https://android.googlesource.com/platform/prebuilts/clang-tools/+/a458ad6">a458ad6</a> :  Snap for 13219462 from 79be9f34f374b14003b5e0e8ea7703f6f28385a2 to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_clang_host_linux-x86-show" class="showLink" onclick="show('platform_prebuilts_clang_host_linux-x86');return false;">+</a><a href="#" id="platform_prebuilts_clang_host_linux-x86-hide" class="hideLink" onclick="hide('platform_prebuilts_clang_host_linux-x86');return false;">-</a>&nbsp;<a name="platform_prebuilts_clang_host_linux-x86" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86">platform/prebuilts/clang/host/linux-x86</a></h2>
+<div id="platform_prebuilts_clang_host_linux-x86"><a href="https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/2d4dcbff">2d4dcbff</a> :  Merge cherrypicks of ['googleplex-android-review.googlesource.com/32808771'] into 25Q2-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_cmake_linux-x86-show" class="showLink" onclick="show('platform_prebuilts_cmake_linux-x86');return false;">+</a><a href="#" id="platform_prebuilts_cmake_linux-x86-hide" class="hideLink" onclick="hide('platform_prebuilts_cmake_linux-x86');return false;">-</a>&nbsp;<a name="platform_prebuilts_cmake_linux-x86" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/cmake/linux-x86">platform/prebuilts/cmake/linux-x86</a></h2>
+<div id="platform_prebuilts_cmake_linux-x86"><a href="https://android.googlesource.com/platform/prebuilts/cmake/linux-x86/+/e57c88d">e57c88d</a> :  Add ctest prebuilt definition am: 2b43ce5452 am: b29ed51838<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_cmdline-tools-show" class="showLink" onclick="show('platform_prebuilts_cmdline-tools');return false;">+</a><a href="#" id="platform_prebuilts_cmdline-tools-hide" class="hideLink" onclick="hide('platform_prebuilts_cmdline-tools');return false;">-</a>&nbsp;<a name="platform_prebuilts_cmdline-tools" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/cmdline-tools">platform/prebuilts/cmdline-tools</a></h2>
+<div id="platform_prebuilts_cmdline-tools"><a href="https://android.googlesource.com/platform/prebuilts/cmdline-tools/+/b5b2dcb">b5b2dcb</a> :  Snap for 12399304 from 1c17e1076d3100642c9a266ab53ae03456cd2216 to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_devtools-show" class="showLink" onclick="show('platform_prebuilts_devtools');return false;">+</a><a href="#" id="platform_prebuilts_devtools-hide" class="hideLink" onclick="hide('platform_prebuilts_devtools');return false;">-</a>&nbsp;<a name="platform_prebuilts_devtools" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/devtools">platform/prebuilts/devtools</a></h2>
+<div id="platform_prebuilts_devtools"><a href="https://android.googlesource.com/platform/prebuilts/devtools/+/4bfccde">4bfccde</a> :  [automerger skipped] Mark ab/11976889 as merged in aosp-main-future am: e011901b1d -s ours<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8-show" class="showLink" onclick="show('platform_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8');return false;">+</a><a href="#" id="platform_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8-hide" class="hideLink" onclick="hide('platform_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8');return false;">-</a>&nbsp;<a name="platform_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8">platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8</a></h2>
+<div id="platform_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8"><a href="https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/+/ed661b6">ed661b6</a> :  Snap for 13264465 from ec65c460baf4c4694c3698e97b1d68600a1f352f to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_gcc_linux-x86_host_x86_64-w64-mingw32-4.8-show" class="showLink" onclick="show('platform_prebuilts_gcc_linux-x86_host_x86_64-w64-mingw32-4.8');return false;">+</a><a href="#" id="platform_prebuilts_gcc_linux-x86_host_x86_64-w64-mingw32-4.8-hide" class="hideLink" onclick="hide('platform_prebuilts_gcc_linux-x86_host_x86_64-w64-mingw32-4.8');return false;">-</a>&nbsp;<a name="platform_prebuilts_gcc_linux-x86_host_x86_64-w64-mingw32-4.8" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8">platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8</a></h2>
+<div id="platform_prebuilts_gcc_linux-x86_host_x86_64-w64-mingw32-4.8"><a href="https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8/+/5170435">5170435</a> :  Snap for 13264465 from a6c64a6502e0a89ee8ad3e3f8be97223a69e5bd7 to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_go_linux-x86-show" class="showLink" onclick="show('platform_prebuilts_go_linux-x86');return false;">+</a><a href="#" id="platform_prebuilts_go_linux-x86-hide" class="hideLink" onclick="hide('platform_prebuilts_go_linux-x86');return false;">-</a>&nbsp;<a name="platform_prebuilts_go_linux-x86" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/go/linux-x86">platform/prebuilts/go/linux-x86</a></h2>
+<div id="platform_prebuilts_go_linux-x86"><a href="https://android.googlesource.com/platform/prebuilts/go/linux-x86/+/f88af64a">f88af64a</a> :  Snap for 12896565 from ed0315e2a72296bd40e11edf5c112dec349ab5e1 to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_gradle-plugin-show" class="showLink" onclick="show('platform_prebuilts_gradle-plugin');return false;">+</a><a href="#" id="platform_prebuilts_gradle-plugin-hide" class="hideLink" onclick="hide('platform_prebuilts_gradle-plugin');return false;">-</a>&nbsp;<a name="platform_prebuilts_gradle-plugin" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/gradle-plugin">platform/prebuilts/gradle-plugin</a></h2>
+<div id="platform_prebuilts_gradle-plugin"><a href="https://android.googlesource.com/platform/prebuilts/gradle-plugin/+/1165e66">1165e66</a> :  Snap for 13190096 from 68b137aad0a2cfdf247ef2f30a4a27e889731bb0 to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_jdk_jdk21-show" class="showLink" onclick="show('platform_prebuilts_jdk_jdk21');return false;">+</a><a href="#" id="platform_prebuilts_jdk_jdk21-hide" class="hideLink" onclick="hide('platform_prebuilts_jdk_jdk21');return false;">-</a>&nbsp;<a name="platform_prebuilts_jdk_jdk21" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/jdk/jdk21">platform/prebuilts/jdk/jdk21</a></h2>
+<div id="platform_prebuilts_jdk_jdk21"><a href="https://android.googlesource.com/platform/prebuilts/jdk/jdk21/+/9b7eccf">9b7eccf</a> :  Snap for 12525705 from ef5bcc92586b839ae3dbacc154127092fa4002ec to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_jdk_jdk8-show" class="showLink" onclick="show('platform_prebuilts_jdk_jdk8');return false;">+</a><a href="#" id="platform_prebuilts_jdk_jdk8-hide" class="hideLink" onclick="hide('platform_prebuilts_jdk_jdk8');return false;">-</a>&nbsp;<a name="platform_prebuilts_jdk_jdk8" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/jdk/jdk8">platform/prebuilts/jdk/jdk8</a></h2>
+<div id="platform_prebuilts_jdk_jdk8"><a href="https://android.googlesource.com/platform/prebuilts/jdk/jdk8/+/6cd518b">6cd518b</a> :  Manual BUILD file in jdk8 to access custom host bootclasspath jars am: 94bbc6ab3d am: 1b33495ae5 am: 0d3ca787bb am: 18a3321911 am: 4455a9832e<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_ktlint-show" class="showLink" onclick="show('platform_prebuilts_ktlint');return false;">+</a><a href="#" id="platform_prebuilts_ktlint-hide" class="hideLink" onclick="hide('platform_prebuilts_ktlint');return false;">-</a>&nbsp;<a name="platform_prebuilts_ktlint" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/ktlint">platform/prebuilts/ktlint</a></h2>
+<div id="platform_prebuilts_ktlint"><a href="https://android.googlesource.com/platform/prebuilts/ktlint/+/433550a">433550a</a> :  Snap for 12955189 from a67606f967ef3008f31333fd965db1fb635420f4 to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_manifest-merger-show" class="showLink" onclick="show('platform_prebuilts_manifest-merger');return false;">+</a><a href="#" id="platform_prebuilts_manifest-merger-hide" class="hideLink" onclick="hide('platform_prebuilts_manifest-merger');return false;">-</a>&nbsp;<a name="platform_prebuilts_manifest-merger" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/manifest-merger">platform/prebuilts/manifest-merger</a></h2>
+<div id="platform_prebuilts_manifest-merger"><a href="https://android.googlesource.com/platform/prebuilts/manifest-merger/+/002531c">002531c</a> :  Snap for 12770256 from 93603b6f7483f14666f74f67977794a3a8fc1594 to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_maven_repo_bumptech-show" class="showLink" onclick="show('platform_prebuilts_maven_repo_bumptech');return false;">+</a><a href="#" id="platform_prebuilts_maven_repo_bumptech-hide" class="hideLink" onclick="hide('platform_prebuilts_maven_repo_bumptech');return false;">-</a>&nbsp;<a name="platform_prebuilts_maven_repo_bumptech" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/maven_repo/bumptech">platform/prebuilts/maven_repo/bumptech</a></h2>
+<div id="platform_prebuilts_maven_repo_bumptech"><a href="https://android.googlesource.com/platform/prebuilts/maven_repo/bumptech/+/5fa5ea9">5fa5ea9</a> :  Snap for 12858568 from 509a65c09c81464e0d1a29d9d7d6d0ab3cec8655 to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_misc-show" class="showLink" onclick="show('platform_prebuilts_misc');return false;">+</a><a href="#" id="platform_prebuilts_misc-hide" class="hideLink" onclick="hide('platform_prebuilts_misc');return false;">-</a>&nbsp;<a name="platform_prebuilts_misc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/misc">platform/prebuilts/misc</a></h2>
+<div id="platform_prebuilts_misc"><a href="https://android.googlesource.com/platform/prebuilts/misc/+/6e84ee6">6e84ee6</a> :  Snap for 13264465 from 1d76094652c446386489b86c7d9f06d3da06aa63 to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_AdServices-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_AdServices');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_AdServices-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_AdServices');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_AdServices" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/AdServices">platform/prebuilts/module_sdk/AdServices</a></h2>
+<div id="platform_prebuilts_module_sdk_AdServices"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/AdServices/+/5d4cbf4">5d4cbf4</a> :  Merge cherrypicks of ['googleplex-android-review.googlesource.com/34047680'] into 25Q2-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_AppSearch-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_AppSearch');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_AppSearch-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_AppSearch');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_AppSearch" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/AppSearch">platform/prebuilts/module_sdk/AppSearch</a></h2>
+<div id="platform_prebuilts_module_sdk_AppSearch"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/AppSearch/+/6929268">6929268</a> :  Merge cherrypicks of ['googleplex-android-review.googlesource.com/34040735'] into 25Q2-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_Bluetooth-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_Bluetooth');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_Bluetooth-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_Bluetooth');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_Bluetooth" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Bluetooth">platform/prebuilts/module_sdk/Bluetooth</a></h2>
+<div id="platform_prebuilts_module_sdk_Bluetooth"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Bluetooth/+/87d4475">87d4475</a> :  Merge cherrypicks of ['googleplex-android-review.googlesource.com/34047934'] into 25Q2-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_ConfigInfrastructure-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_ConfigInfrastructure');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_ConfigInfrastructure-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_ConfigInfrastructure');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_ConfigInfrastructure" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/ConfigInfrastructure">platform/prebuilts/module_sdk/ConfigInfrastructure</a></h2>
+<div id="platform_prebuilts_module_sdk_ConfigInfrastructure"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/ConfigInfrastructure/+/5ccc136">5ccc136</a> :  Merge cherrypicks of ['googleplex-android-review.googlesource.com/34047681'] into 25Q2-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_Connectivity-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_Connectivity');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_Connectivity-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_Connectivity');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_Connectivity" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Connectivity">platform/prebuilts/module_sdk/Connectivity</a></h2>
+<div id="platform_prebuilts_module_sdk_Connectivity"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Connectivity/+/702872c">702872c</a> :  Merge cherrypicks of ['googleplex-android-review.googlesource.com/34047858'] into 25Q2-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_CrashRecovery-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_CrashRecovery');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_CrashRecovery-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_CrashRecovery');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_CrashRecovery" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/CrashRecovery">platform/prebuilts/module_sdk/CrashRecovery</a></h2>
+<div id="platform_prebuilts_module_sdk_CrashRecovery"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/CrashRecovery/+/6596816">6596816</a> :  Merge cherrypicks of ['googleplex-android-review.googlesource.com/34047913'] into 25Q2-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_DeviceLock-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_DeviceLock');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_DeviceLock-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_DeviceLock');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_DeviceLock" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/DeviceLock">platform/prebuilts/module_sdk/DeviceLock</a></h2>
+<div id="platform_prebuilts_module_sdk_DeviceLock"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/DeviceLock/+/99cf7be">99cf7be</a> :  Snap for 13054324 from ed1623ca7f20e2840760409aa1323ff1cc15dbf0 to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_HealthFitness-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_HealthFitness');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_HealthFitness-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_HealthFitness');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_HealthFitness" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/HealthFitness">platform/prebuilts/module_sdk/HealthFitness</a></h2>
+<div id="platform_prebuilts_module_sdk_HealthFitness"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/HealthFitness/+/31fdcae">31fdcae</a> :  Merge cherrypicks of ['googleplex-android-review.googlesource.com/34046266'] into 25Q2-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_IPsec-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_IPsec');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_IPsec-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_IPsec');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_IPsec" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/IPsec">platform/prebuilts/module_sdk/IPsec</a></h2>
+<div id="platform_prebuilts_module_sdk_IPsec"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/IPsec/+/88f5bdc">88f5bdc</a> :  Merge cherrypicks of ['googleplex-android-review.googlesource.com/34048072'] into 25Q2-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_Media-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_Media');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_Media-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_Media');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_Media" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Media">platform/prebuilts/module_sdk/Media</a></h2>
+<div id="platform_prebuilts_module_sdk_Media"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Media/+/f590335">f590335</a> :  Merge cherrypicks of ['googleplex-android-review.googlesource.com/34048271'] into 25Q2-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_MediaProvider-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_MediaProvider');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_MediaProvider-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_MediaProvider');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_MediaProvider" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/MediaProvider">platform/prebuilts/module_sdk/MediaProvider</a></h2>
+<div id="platform_prebuilts_module_sdk_MediaProvider"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/MediaProvider/+/ffbcc89">ffbcc89</a> :  Merge cherrypicks of ['googleplex-android-review.googlesource.com/34047717'] into 25Q2-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_Nfc-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_Nfc');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_Nfc-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_Nfc');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_Nfc" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Nfc">platform/prebuilts/module_sdk/Nfc</a></h2>
+<div id="platform_prebuilts_module_sdk_Nfc"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Nfc/+/223babb">223babb</a> :  Merge cherrypicks of ['googleplex-android-review.googlesource.com/34048074'] into 25Q2-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_OnDevicePersonalization-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_OnDevicePersonalization');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_OnDevicePersonalization-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_OnDevicePersonalization');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_OnDevicePersonalization" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/OnDevicePersonalization">platform/prebuilts/module_sdk/OnDevicePersonalization</a></h2>
+<div id="platform_prebuilts_module_sdk_OnDevicePersonalization"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/OnDevicePersonalization/+/e531203">e531203</a> :  Merge cherrypicks of ['googleplex-android-review.googlesource.com/34047915'] into 25Q2-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_Permission-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_Permission');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_Permission-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_Permission');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_Permission" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Permission">platform/prebuilts/module_sdk/Permission</a></h2>
+<div id="platform_prebuilts_module_sdk_Permission"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Permission/+/988b71e">988b71e</a> :  Merge cherrypicks of ['googleplex-android-review.googlesource.com/34046268'] into 25Q2-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_Profiling-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_Profiling');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_Profiling-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_Profiling');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_Profiling" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Profiling">platform/prebuilts/module_sdk/Profiling</a></h2>
+<div id="platform_prebuilts_module_sdk_Profiling"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Profiling/+/19e93ce">19e93ce</a> :  Merge cherrypicks of ['googleplex-android-review.googlesource.com/34047935'] into 25Q2-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_RemoteKeyProvisioning-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_RemoteKeyProvisioning');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_RemoteKeyProvisioning-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_RemoteKeyProvisioning');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_RemoteKeyProvisioning" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/RemoteKeyProvisioning">platform/prebuilts/module_sdk/RemoteKeyProvisioning</a></h2>
+<div id="platform_prebuilts_module_sdk_RemoteKeyProvisioning"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/RemoteKeyProvisioning/+/89ee650">89ee650</a> :  Merge cherrypicks of ['googleplex-android-review.googlesource.com/34048017'] into 25Q2-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_Scheduling-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_Scheduling');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_Scheduling-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_Scheduling');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_Scheduling" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Scheduling">platform/prebuilts/module_sdk/Scheduling</a></h2>
+<div id="platform_prebuilts_module_sdk_Scheduling"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Scheduling/+/4fc6af6">4fc6af6</a> :  Merge cherrypicks of ['googleplex-android-review.googlesource.com/34047857'] into 25Q2-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_SdkExtensions-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_SdkExtensions');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_SdkExtensions-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_SdkExtensions');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_SdkExtensions" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/SdkExtensions">platform/prebuilts/module_sdk/SdkExtensions</a></h2>
+<div id="platform_prebuilts_module_sdk_SdkExtensions"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/SdkExtensions/+/ae94f8b">ae94f8b</a> :  Merge cherrypicks of ['googleplex-android-review.googlesource.com/34047682'] into 25Q2-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_StatsD-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_StatsD');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_StatsD-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_StatsD');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_StatsD" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/StatsD">platform/prebuilts/module_sdk/StatsD</a></h2>
+<div id="platform_prebuilts_module_sdk_StatsD"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/StatsD/+/8210656">8210656</a> :  Merge cherrypicks of ['googleplex-android-review.googlesource.com/34047718'] into 25Q2-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_Uwb-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_Uwb');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_Uwb-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_Uwb');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_Uwb" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Uwb">platform/prebuilts/module_sdk/Uwb</a></h2>
+<div id="platform_prebuilts_module_sdk_Uwb"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Uwb/+/90533ac">90533ac</a> :  Merge cherrypicks of ['googleplex-android-review.googlesource.com/34048075'] into 25Q2-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_Wifi-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_Wifi');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_Wifi-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_Wifi');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_Wifi" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Wifi">platform/prebuilts/module_sdk/Wifi</a></h2>
+<div id="platform_prebuilts_module_sdk_Wifi"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/Wifi/+/874c92b">874c92b</a> :  Merge cherrypicks of ['googleplex-android-review.googlesource.com/34047862'] into 25Q2-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_art-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_art');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_art-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_art');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_art" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/art">platform/prebuilts/module_sdk/art</a></h2>
+<div id="platform_prebuilts_module_sdk_art"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/art/+/b0f1924">b0f1924</a> :  Merge cherrypicks of ['googleplex-android-review.googlesource.com/34048012'] into 25Q2-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_module_sdk_conscrypt-show" class="showLink" onclick="show('platform_prebuilts_module_sdk_conscrypt');return false;">+</a><a href="#" id="platform_prebuilts_module_sdk_conscrypt-hide" class="hideLink" onclick="hide('platform_prebuilts_module_sdk_conscrypt');return false;">-</a>&nbsp;<a name="platform_prebuilts_module_sdk_conscrypt" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/module_sdk/conscrypt">platform/prebuilts/module_sdk/conscrypt</a></h2>
+<div id="platform_prebuilts_module_sdk_conscrypt"><a href="https://android.googlesource.com/platform/prebuilts/module_sdk/conscrypt/+/d63318e">d63318e</a> :  Merge cherrypicks of ['googleplex-android-review.googlesource.com/34047557'] into 25Q2-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_ndk-show" class="showLink" onclick="show('platform_prebuilts_ndk');return false;">+</a><a href="#" id="platform_prebuilts_ndk-hide" class="hideLink" onclick="hide('platform_prebuilts_ndk');return false;">-</a>&nbsp;<a name="platform_prebuilts_ndk" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/ndk">platform/prebuilts/ndk</a></h2>
+<div id="platform_prebuilts_ndk"><a href="https://android.googlesource.com/platform/prebuilts/ndk/+/e0e58e6">e0e58e6</a> :  Merge changes from topic "reland-ndk-libcxx" into main am: 679207bd3a am: e8014b49a3<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_qemu-kernel-show" class="showLink" onclick="show('platform_prebuilts_qemu-kernel');return false;">+</a><a href="#" id="platform_prebuilts_qemu-kernel-hide" class="hideLink" onclick="hide('platform_prebuilts_qemu-kernel');return false;">-</a>&nbsp;<a name="platform_prebuilts_qemu-kernel" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/qemu-kernel">platform/prebuilts/qemu-kernel</a></h2>
+<div id="platform_prebuilts_qemu-kernel"><a href="https://android.googlesource.com/platform/prebuilts/qemu-kernel/+/3303bfa">3303bfa</a> :  Snap for 13143403 from d777222e766c0c08cfed24853d36506e44fdd4e7 to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_r8-show" class="showLink" onclick="show('platform_prebuilts_r8');return false;">+</a><a href="#" id="platform_prebuilts_r8-hide" class="hideLink" onclick="hide('platform_prebuilts_r8');return false;">-</a>&nbsp;<a name="platform_prebuilts_r8" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/r8">platform/prebuilts/r8</a></h2>
+<div id="platform_prebuilts_r8"><a href="https://android.googlesource.com/platform/prebuilts/r8/+/318c3c8">318c3c8</a> :  Snap for 13264465 from e2effac3b07898a00bd9f86efb925fe1414f2c18 to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_remoteexecution-client-show" class="showLink" onclick="show('platform_prebuilts_remoteexecution-client');return false;">+</a><a href="#" id="platform_prebuilts_remoteexecution-client-hide" class="hideLink" onclick="hide('platform_prebuilts_remoteexecution-client');return false;">-</a>&nbsp;<a name="platform_prebuilts_remoteexecution-client" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/remoteexecution-client">platform/prebuilts/remoteexecution-client</a></h2>
+<div id="platform_prebuilts_remoteexecution-client"><a href="https://android.googlesource.com/platform/prebuilts/remoteexecution-client/+/6bcf0cc">6bcf0cc</a> :  Snap for 13182071 from 4197abda58f5801abc9a7dec2d28d18bb0ee908f to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_runtime-show" class="showLink" onclick="show('platform_prebuilts_runtime');return false;">+</a><a href="#" id="platform_prebuilts_runtime-hide" class="hideLink" onclick="hide('platform_prebuilts_runtime');return false;">-</a>&nbsp;<a name="platform_prebuilts_runtime" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/runtime">platform/prebuilts/runtime</a></h2>
+<div id="platform_prebuilts_runtime"><a href="https://android.googlesource.com/platform/prebuilts/runtime/+/224a138">224a138</a> :  Snap for 13190096 from 18e0dee2457eecc37b1fb436d878746a3e8e8f7a to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_rust-show" class="showLink" onclick="show('platform_prebuilts_rust');return false;">+</a><a href="#" id="platform_prebuilts_rust-hide" class="hideLink" onclick="hide('platform_prebuilts_rust');return false;">-</a>&nbsp;<a name="platform_prebuilts_rust" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/rust">platform/prebuilts/rust</a></h2>
+<div id="platform_prebuilts_rust"><a href="https://android.googlesource.com/platform/prebuilts/rust/+/3807eb5">3807eb5</a> :  Snap for 13174046 from b5ed2fb308906fd8e08bebf82890cdaac056c31c to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_sdk-show" class="showLink" onclick="show('platform_prebuilts_sdk');return false;">+</a><a href="#" id="platform_prebuilts_sdk-hide" class="hideLink" onclick="hide('platform_prebuilts_sdk');return false;">-</a>&nbsp;<a name="platform_prebuilts_sdk" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/sdk">platform/prebuilts/sdk</a></h2>
+<div id="platform_prebuilts_sdk"><a href="https://android.googlesource.com/platform/prebuilts/sdk/+/3b7daadc">3b7daadc</a> :  Merge cherrypicks of ['googleplex-android-review.googlesource.com/33130782'] into 25Q2-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_tools-show" class="showLink" onclick="show('platform_prebuilts_tools');return false;">+</a><a href="#" id="platform_prebuilts_tools-hide" class="hideLink" onclick="hide('platform_prebuilts_tools');return false;">-</a>&nbsp;<a name="platform_prebuilts_tools" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/tools">platform/prebuilts/tools</a></h2>
+<div id="platform_prebuilts_tools"><a href="https://android.googlesource.com/platform/prebuilts/tools/+/8ee19a8">8ee19a8</a> :  Snap for 13248265 from 384a8f5b451294ba2f795dfdda5573a3ac0dfd9e to 25Q2-release<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_vndk_v30-show" class="showLink" onclick="show('platform_prebuilts_vndk_v30');return false;">+</a><a href="#" id="platform_prebuilts_vndk_v30-hide" class="hideLink" onclick="hide('platform_prebuilts_vndk_v30');return false;">-</a>&nbsp;<a name="platform_prebuilts_vndk_v30" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/vndk/v30">platform/prebuilts/vndk/v30</a></h2>
+<div id="platform_prebuilts_vndk_v30"><a href="https://android.googlesource.com/platform/prebuilts/vndk/v30/+/5f9884a">5f9884a</a> :  Remove duplicate paths in module definitions am: 3c2127b117 am: fe5e402e0f<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_vndk_v31-show" class="showLink" onclick="show('platform_prebuilts_vndk_v31');return false;">+</a><a href="#" id="platform_prebuilts_vndk_v31-hide" class="hideLink" onclick="hide('platform_prebuilts_vndk_v31');return false;">-</a>&nbsp;<a name="platform_prebuilts_vndk_v31" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/vndk/v31">platform/prebuilts/vndk/v31</a></h2>
+<div id="platform_prebuilts_vndk_v31"><a href="https://android.googlesource.com/platform/prebuilts/vndk/v31/+/1a059a5">1a059a5</a> :  [automerger skipped] Update VNDK snapshot v31 to build 9442954. am: f9035fa514 am: 26b7a4a77c am: 8a69ac327f am: 55da2580fd -s ours am: 96365bc4f4 -s ours<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_vndk_v32-show" class="showLink" onclick="show('platform_prebuilts_vndk_v32');return false;">+</a><a href="#" id="platform_prebuilts_vndk_v32-hide" class="hideLink" onclick="hide('platform_prebuilts_vndk_v32');return false;">-</a>&nbsp;<a name="platform_prebuilts_vndk_v32" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/vndk/v32">platform/prebuilts/vndk/v32</a></h2>
+<div id="platform_prebuilts_vndk_v32"><a href="https://android.googlesource.com/platform/prebuilts/vndk/v32/+/e1ba804">e1ba804</a> :  [automerger skipped] Update VNDK snapshot v32 to build 9372951. am: e6afb84e95 am: 7cd5efa2ba am: 4e2af32e90 -s ours am: aa5efc256d -s ours<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_vndk_v33-show" class="showLink" onclick="show('platform_prebuilts_vndk_v33');return false;">+</a><a href="#" id="platform_prebuilts_vndk_v33-hide" class="hideLink" onclick="hide('platform_prebuilts_vndk_v33');return false;">-</a>&nbsp;<a name="platform_prebuilts_vndk_v33" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/vndk/v33">platform/prebuilts/vndk/v33</a></h2>
+<div id="platform_prebuilts_vndk_v33"><a href="https://android.googlesource.com/platform/prebuilts/vndk/v33/+/d79ad87">d79ad87</a> :  [automerger skipped] Update VNDK snapshot v33 to build 10954093. am: ed7ede1344 -s ours am: 9a090f5656 -s ours am: 8d94fd2e18 -s ours<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_prebuilts_vndk_v34-show" class="showLink" onclick="show('platform_prebuilts_vndk_v34');return false;">+</a><a href="#" id="platform_prebuilts_vndk_v34-hide" class="hideLink" onclick="hide('platform_prebuilts_vndk_v34');return false;">-</a>&nbsp;<a name="platform_prebuilts_vndk_v34" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/prebuilts/vndk/v34">platform/prebuilts/vndk/v34</a></h2>
+<div id="platform_prebuilts_vndk_v34"><a href="https://android.googlesource.com/platform/prebuilts/vndk/v34/+/c8a125b">c8a125b</a> :  Update VNDK snapshot v34 to build 11542983. am: dc6c455e38 am: f5bdfcccb2<br />
+</div></p>
+
+<p><h2><a href="#" id="toolchain_pgo-profiles-show" class="showLink" onclick="show('toolchain_pgo-profiles');return false;">+</a><a href="#" id="toolchain_pgo-profiles-hide" class="hideLink" onclick="hide('toolchain_pgo-profiles');return false;">-</a>&nbsp;<a name="toolchain_pgo-profiles" class="nonLink">Project:</a> <a href="https://android.googlesource.com/toolchain/pgo-profiles">toolchain/pgo-profiles</a></h2>
+<div id="toolchain_pgo-profiles"><a href="https://android.googlesource.com/toolchain/pgo-profiles/+/17fc8d3">17fc8d3</a> :  Merge cherrypicks of ['googleplex-android-review.googlesource.com/32872852'] into 25Q2-release.<br />
+</div></p>
+
+<p><h2><a href="#" id="platform_tools_tradefederation_prebuilts-show" class="showLink" onclick="show('platform_tools_tradefederation_prebuilts');return false;">+</a><a href="#" id="platform_tools_tradefederation_prebuilts-hide" class="hideLink" onclick="hide('platform_tools_tradefederation_prebuilts');return false;">-</a>&nbsp;<a name="platform_tools_tradefederation_prebuilts" class="nonLink">Project:</a> <a href="https://android.googlesource.com/platform/tools/tradefederation/prebuilts">platform/tools/tradefederation/prebuilts</a></h2>
+<div id="platform_tools_tradefederation_prebuilts"><a href="https://android.googlesource.com/platform/tools/tradefederation/prebuilts/+/c7dd9fd">c7dd9fd</a> :  Merge cherrypicks of ['googleplex-android-review.googlesource.com/33126726'] into 25Q2-release.<br />
+</div></p>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="text-muted">&copy; Copyright 20[0-9]{2} The LineageOS Project</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
